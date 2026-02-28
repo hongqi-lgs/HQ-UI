@@ -10,7 +10,7 @@ export default defineConfig({
   themeConfig: {
     logo: '/logo.svg',
     nav: [
-      { text: '指南', link: '/guide/getting-started', activeMatch: '/guide/' },
+      { text: '指南', link: '/guide/introduction', activeMatch: '/guide/' },
       { text: '组件', link: '/components/button', activeMatch: '/components/' },
       {
         text: '相关链接',
@@ -25,6 +25,7 @@ export default defineConfig({
         {
           text: '指南',
           items: [
+            { text: '介绍', link: '/guide/introduction' },
             { text: '快速上手', link: '/guide/getting-started' },
             { text: '主题定制', link: '/guide/theming' },
           ]
@@ -69,6 +70,8 @@ export default defineConfig({
     }
   }
 })
+
+
 
 
 

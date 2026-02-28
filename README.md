@@ -7,6 +7,11 @@ A modern Vue 3 component library built with TypeScript, featuring a powerful the
 [![Vite](https://img.shields.io/badge/Vite-6.x-646CFF?logo=vite)](https://vitejs.dev/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
+## 🔗 Links
+
+- 📖 **[在线文档](https://hongqi-lgs.github.io/HQ-UI/)** — 组件文档、API 参考、主题定制指南
+- 🎮 **[Playground](https://hongqi-lgs.github.io/HQ-UI/)** — 在线体验组件效果
+
 ## ✨ Features
 
 - 🎨 **Theme System** — Light / Dark / Auto mode with CSS Variables, fully customizable
@@ -262,4 +267,5 @@ HQ-UI/
 ---
 
 Made with ❤️ by [hongqi-lgs](https://github.com/hongqi-lgs)
+
 
