@@ -1,0 +1,127 @@
+/* ============================================
+   Luna UI - Theme Variables
+   ============================================ */
+
+:root,
+[data-theme="light"] {
+  /* --- Brand Colors --- */
+  --lu-color-primary: #6366f1;
+  --lu-color-primary-light: #818cf8;
+  --lu-color-primary-dark: #4f46e5;
+  --lu-color-primary-bg: rgba(99, 102, 241, 0.08);
+
+  --lu-color-success: #22c55e;
+  --lu-color-success-light: #4ade80;
+  --lu-color-success-dark: #16a34a;
+  --lu-color-success-bg: rgba(34, 197, 94, 0.08);
+
+  --lu-color-warning: #f59e0b;
+  --lu-color-warning-light: #fbbf24;
+  --lu-color-warning-dark: #d97706;
+  --lu-color-warning-bg: rgba(245, 158, 11, 0.08);
+
+  --lu-color-danger: #ef4444;
+  --lu-color-danger-light: #f87171;
+  --lu-color-danger-dark: #dc2626;
+  --lu-color-danger-bg: rgba(239, 68, 68, 0.08);
+
+  --lu-color-info: #3b82f6;
+  --lu-color-info-light: #60a5fa;
+  --lu-color-info-dark: #2563eb;
+  --lu-color-info-bg: rgba(59, 130, 246, 0.08);
+
+  /* --- Neutral Colors --- */
+  --lu-color-text: #1e293b;
+  --lu-color-text-secondary: #64748b;
+  --lu-color-text-placeholder: #94a3b8;
+  --lu-color-text-disabled: #cbd5e1;
+
+  --lu-color-bg: #ffffff;
+  --lu-color-bg-secondary: #f8fafc;
+  --lu-color-bg-tertiary: #f1f5f9;
+
+  --lu-color-border: #e2e8f0;
+  --lu-color-border-light: #f1f5f9;
+  --lu-color-border-dark: #cbd5e1;
+
+  /* --- Shadows --- */
+  --lu-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --lu-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+  --lu-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
+
+  /* --- Radius --- */
+  --lu-radius-sm: 4px;
+  --lu-radius-md: 6px;
+  --lu-radius-lg: 8px;
+  --lu-radius-xl: 12px;
+  --lu-radius-full: 9999px;
+
+  /* --- Font --- */
+  --lu-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --lu-font-size-xs: 12px;
+  --lu-font-size-sm: 13px;
+  --lu-font-size-md: 14px;
+  --lu-font-size-lg: 16px;
+  --lu-font-size-xl: 18px;
+
+  /* --- Spacing --- */
+  --lu-spacing-xs: 4px;
+  --lu-spacing-sm: 8px;
+  --lu-spacing-md: 12px;
+  --lu-spacing-lg: 16px;
+  --lu-spacing-xl: 24px;
+
+  /* --- Transition --- */
+  --lu-transition-fast: 0.15s ease;
+  --lu-transition-normal: 0.25s ease;
+  --lu-transition-slow: 0.35s ease;
+}
+
+/* ============================================
+   Dark Theme
+   ============================================ */
+[data-theme="dark"] {
+  --lu-color-primary: #818cf8;
+  --lu-color-primary-light: #a5b4fc;
+  --lu-color-primary-dark: #6366f1;
+  --lu-color-primary-bg: rgba(129, 140, 248, 0.12);
+
+  --lu-color-success: #4ade80;
+  --lu-color-success-light: #86efac;
+  --lu-color-success-dark: #22c55e;
+  --lu-color-success-bg: rgba(74, 222, 128, 0.12);
+
+  --lu-color-warning: #fbbf24;
+  --lu-color-warning-light: #fcd34d;
+  --lu-color-warning-dark: #f59e0b;
+  --lu-color-warning-bg: rgba(251, 191, 36, 0.12);
+
+  --lu-color-danger: #f87171;
+  --lu-color-danger-light: #fca5a5;
+  --lu-color-danger-dark: #ef4444;
+  --lu-color-danger-bg: rgba(248, 113, 113, 0.12);
+
+  --lu-color-info: #60a5fa;
+  --lu-color-info-light: #93c5fd;
+  --lu-color-info-dark: #3b82f6;
+  --lu-color-info-bg: rgba(96, 165, 250, 0.12);
+
+  --lu-color-text: #f1f5f9;
+  --lu-color-text-secondary: #94a3b8;
+  --lu-color-text-placeholder: #64748b;
+  --lu-color-text-disabled: #475569;
+
+  --lu-color-bg: #0f172a;
+  --lu-color-bg-secondary: #1e293b;
+  --lu-color-bg-tertiary: #334155;
+
+  --lu-color-border: #334155;
+  --lu-color-border-light: #1e293b;
+  --lu-color-border-dark: #475569;
+
+  --lu-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --lu-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -2px rgba(0, 0, 0, 0.3);
+  --lu-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -4px rgba(0, 0, 0, 0.3);
+}
+
+

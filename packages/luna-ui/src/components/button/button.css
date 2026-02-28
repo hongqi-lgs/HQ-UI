@@ -1,0 +1,227 @@
+/* ============================================
+   Luna Button
+   ============================================ */
+.lu-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--lu-spacing-xs);
+  font-family: var(--lu-font-family);
+  font-weight: 500;
+  white-space: nowrap;
+  cursor: pointer;
+  border: 1px solid transparent;
+  outline: none;
+  transition: all var(--lu-transition-fast);
+  user-select: none;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+/* --- Sizes --- */
+.lu-button--sm {
+  height: 28px;
+  padding: 0 10px;
+  font-size: var(--lu-font-size-xs);
+  border-radius: var(--lu-radius-sm);
+}
+.lu-button--md {
+  height: 34px;
+  padding: 0 16px;
+  font-size: var(--lu-font-size-md);
+  border-radius: var(--lu-radius-md);
+}
+.lu-button--lg {
+  height: 40px;
+  padding: 0 20px;
+  font-size: var(--lu-font-size-lg);
+  border-radius: var(--lu-radius-md);
+}
+
+/* --- Round & Circle --- */
+.lu-button--round { border-radius: var(--lu-radius-full); }
+.lu-button--circle {
+  border-radius: 50%;
+  padding: 0;
+}
+.lu-button--circle.lu-button--sm { width: 28px; }
+.lu-button--circle.lu-button--md { width: 34px; }
+.lu-button--circle.lu-button--lg { width: 40px; }
+
+/* --- Block --- */
+.lu-button--block { display: flex; width: 100%; }
+
+/* --- Solid Variants --- */
+.lu-button--default.lu-button--solid {
+  background: var(--lu-color-bg);
+  color: var(--lu-color-text);
+  border-color: var(--lu-color-border);
+}
+.lu-button--default.lu-button--solid:hover {
+  border-color: var(--lu-color-primary);
+  color: var(--lu-color-primary);
+}
+
+.lu-button--primary.lu-button--solid {
+  background: var(--lu-color-primary);
+  color: #fff;
+}
+.lu-button--primary.lu-button--solid:hover {
+  background: var(--lu-color-primary-light);
+}
+
+.lu-button--success.lu-button--solid {
+  background: var(--lu-color-success);
+  color: #fff;
+}
+.lu-button--success.lu-button--solid:hover {
+  background: var(--lu-color-success-light);
+}
+
+.lu-button--warning.lu-button--solid {
+  background: var(--lu-color-warning);
+  color: #fff;
+}
+.lu-button--warning.lu-button--solid:hover {
+  background: var(--lu-color-warning-light);
+}
+
+.lu-button--danger.lu-button--solid {
+  background: var(--lu-color-danger);
+  color: #fff;
+}
+.lu-button--danger.lu-button--solid:hover {
+  background: var(--lu-color-danger-light);
+}
+
+.lu-button--info.lu-button--solid {
+  background: var(--lu-color-info);
+  color: #fff;
+}
+.lu-button--info.lu-button--solid:hover {
+  background: var(--lu-color-info-light);
+}
+
+/* --- Outline Variants --- */
+.lu-button--primary.lu-button--outline {
+  background: transparent;
+  color: var(--lu-color-primary);
+  border-color: var(--lu-color-primary);
+}
+.lu-button--primary.lu-button--outline:hover {
+  background: var(--lu-color-primary-bg);
+}
+
+.lu-button--success.lu-button--outline {
+  background: transparent;
+  color: var(--lu-color-success);
+  border-color: var(--lu-color-success);
+}
+.lu-button--success.lu-button--outline:hover {
+  background: var(--lu-color-success-bg);
+}
+
+.lu-button--warning.lu-button--outline {
+  background: transparent;
+  color: var(--lu-color-warning);
+  border-color: var(--lu-color-warning);
+}
+.lu-button--warning.lu-button--outline:hover {
+  background: var(--lu-color-warning-bg);
+}
+
+.lu-button--danger.lu-button--outline {
+  background: transparent;
+  color: var(--lu-color-danger);
+  border-color: var(--lu-color-danger);
+}
+.lu-button--danger.lu-button--outline:hover {
+  background: var(--lu-color-danger-bg);
+}
+
+.lu-button--info.lu-button--outline {
+  background: transparent;
+  color: var(--lu-color-info);
+  border-color: var(--lu-color-info);
+}
+.lu-button--info.lu-button--outline:hover {
+  background: var(--lu-color-info-bg);
+}
+
+.lu-button--default.lu-button--outline {
+  background: transparent;
+  color: var(--lu-color-text);
+  border-color: var(--lu-color-border);
+}
+.lu-button--default.lu-button--outline:hover {
+  border-color: var(--lu-color-primary);
+  color: var(--lu-color-primary);
+}
+
+/* --- Ghost Variants --- */
+.lu-button--primary.lu-button--ghost {
+  background: var(--lu-color-primary-bg);
+  color: var(--lu-color-primary);
+  border-color: transparent;
+}
+.lu-button--primary.lu-button--ghost:hover {
+  background: var(--lu-color-primary);
+  color: #fff;
+}
+
+.lu-button--default.lu-button--ghost {
+  background: var(--lu-color-bg-tertiary);
+  color: var(--lu-color-text);
+  border-color: transparent;
+}
+.lu-button--default.lu-button--ghost:hover {
+  background: var(--lu-color-border);
+}
+
+/* --- Link Variants --- */
+.lu-button--link {
+  background: transparent !important;
+  border-color: transparent !important;
+  padding: 0;
+  height: auto;
+}
+.lu-button--primary.lu-button--link { color: var(--lu-color-primary); }
+.lu-button--primary.lu-button--link:hover { color: var(--lu-color-primary-dark); }
+.lu-button--default.lu-button--link { color: var(--lu-color-text-secondary); }
+.lu-button--default.lu-button--link:hover { color: var(--lu-color-text); }
+
+/* --- Disabled --- */
+.lu-button--disabled,
+.lu-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* --- Loading --- */
+.lu-button__loading {
+  display: inline-flex;
+  margin-right: 4px;
+}
+.lu-button__spinner {
+  width: 1em;
+  height: 1em;
+  animation: lu-spin 0.8s linear infinite;
+}
+@keyframes lu-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* --- Focus --- */
+.lu-button:focus-visible {
+  box-shadow: 0 0 0 2px var(--lu-color-bg), 0 0 0 4px var(--lu-color-primary);
+}
+
+/* --- Icon --- */
+.lu-button__icon {
+  display: inline-flex;
+  font-size: 1.1em;
+}
+
+

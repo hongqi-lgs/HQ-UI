@@ -1,0 +1,107 @@
+/* ============================================
+   Luna Input
+   ============================================ */
+.lu-input {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  background: var(--lu-color-bg);
+  border: 1px solid var(--lu-color-border);
+  border-radius: var(--lu-radius-md);
+  transition: all var(--lu-transition-fast);
+  font-family: var(--lu-font-family);
+}
+
+.lu-input:hover {
+  border-color: var(--lu-color-border-dark);
+}
+
+.lu-input--focused {
+  border-color: var(--lu-color-primary) !important;
+  box-shadow: 0 0 0 2px var(--lu-color-primary-bg);
+}
+
+/* --- Status --- */
+.lu-input--error {
+  border-color: var(--lu-color-danger);
+}
+.lu-input--error.lu-input--focused {
+  border-color: var(--lu-color-danger) !important;
+  box-shadow: 0 0 0 2px var(--lu-color-danger-bg);
+}
+.lu-input--success {
+  border-color: var(--lu-color-success);
+}
+.lu-input--success.lu-input--focused {
+  border-color: var(--lu-color-success) !important;
+  box-shadow: 0 0 0 2px var(--lu-color-success-bg);
+}
+
+/* --- Inner --- */
+.lu-input__inner {
+  flex: 1;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--lu-color-text);
+  font-family: inherit;
+  font-size: inherit;
+}
+.lu-input__inner::placeholder {
+  color: var(--lu-color-text-placeholder);
+}
+
+/* --- Sizes --- */
+.lu-input--sm {
+  height: 28px;
+  padding: 0 8px;
+  font-size: var(--lu-font-size-xs);
+  border-radius: var(--lu-radius-sm);
+}
+.lu-input--md {
+  height: 34px;
+  padding: 0 12px;
+  font-size: var(--lu-font-size-md);
+}
+.lu-input--lg {
+  height: 40px;
+  padding: 0 14px;
+  font-size: var(--lu-font-size-lg);
+}
+
+/* --- Disabled --- */
+.lu-input--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background: var(--lu-color-bg-tertiary);
+}
+.lu-input--disabled .lu-input__inner {
+  cursor: not-allowed;
+}
+
+/* --- Prefix / Suffix --- */
+.lu-input__prefix,
+.lu-input__suffix {
+  display: inline-flex;
+  align-items: center;
+  color: var(--lu-color-text-secondary);
+  flex-shrink: 0;
+}
+.lu-input__prefix { margin-right: var(--lu-spacing-xs); }
+.lu-input__suffix { margin-left: var(--lu-spacing-xs); }
+
+/* --- Clear --- */
+.lu-input__clear {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  color: var(--lu-color-text-placeholder);
+  margin-left: var(--lu-spacing-xs);
+  transition: color var(--lu-transition-fast);
+}
+.lu-input__clear:hover {
+  color: var(--lu-color-text-secondary);
+}
+
+
